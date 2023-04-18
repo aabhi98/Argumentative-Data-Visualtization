@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Homework #4: D3 innovation</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading-container" style="border: 2px solid #ccc; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                <h2 class="text-center">Homework #5: Argumentative Vis</h2>
+                <h3 class="text-center">Abhishek Annabathula - aannaba1@asu.edu</h3>
+                <h4 class="text-center" style="color: aqua; border: 1px solid #d9e929; padding: 5px; border-radius: 10px;">Apple products are better than Android</h4>
+            </div>            
+            <div id="my_dataviz" style="margin-top: 35px;">
+                <div class="left" id="left"></div>
+                <div class="right" id = "right"></div>
+            </div>
+            <div id="summary">
+                <h5>Introduction</h5>
+                <p>The debate between which mobile operating system is better, Apple's iOS or Google's Android, has been ongoing for years. 
+                    Both have their unique features and loyal fan bases, making it difficult to declare a clear winner. 
+                    To delve deeper into this topic, I have chosen to analyze a dataset available on Kaggle that compares the two operating 
+                    systems. The dataset includes information about various aspects of the devices, such as CPU, GPU, Memory usage, UX and Total score.
+                    I have used Python and the Pandas library to process and analyze the data, with a focus on comparing the performance 
+                    of the two operating systems based on the given attributes. The data provides valuable insights into the strengths 
+                    and weaknesses of each operating system, which can aid in the decision-making process for consumers looking to purchase a
+                    new device. Throughout this analysis, I have created visualizations to present the results and make them easily 
+                    understandable.</p>
+                <h5>Left Chart</h5>
+                <p>The chart shown above is a grouped bar chart that compares the Total Scores of Apple and Android devices. 
+                    The chart is divided into two categories, Apple and Android, and their respective devices are shown on the x-axis. 
+                    The Total Scores of each device are plotted on the y-axis. The chart indicates that Apple products are better than 
+                    Android products, as the Total Scores of all Apple products are higher than those of Android products. The chart also 
+                    shows that the iPhone XS Max has the highest Total Score among all devices, followed by the iPad Pro 12.9, and the 
+                    iPhone 11 Pro Max. On the other hand, the Samsung Galaxy S10+ has the highest Total Score among all Android devices. 
+                    The chart also indicates that the Total Scores of the Apple products are more consistent than those of Android products. 
+                    Overall, the chart seems to be biased towards Apple products.</p>
+                <h5>Right Chart</h5>
+                <p>The chart on the right is a bubble chart comparing the CPU score, UX score, and memory of Apple and Android devices. 
+                    The chart shows that Android devices have higher UX scores compared to Apple devices, but Apple devices have a higher 
+                    CPU score and memory. The size of each bubble corresponds to the memory of the device, with larger bubbles indicating 
+                    higher memory. The chart also includes a tooltip that shows the details of each device when hovered over. Overall, the 
+                    chart provides a comprehensive comparison of the performance of Apple and Android devices in terms of CPU, UX, and memory.
+                    This chart showcases that android devices have much better User experience when compared to Apple products that contradicts
+                    proposition that Apple products are better against Android.</p>
+                <h5>Rhetorical techniques/framing effects</h5>
+                <ol>
+                    <li>Color: The use of color like grey and green that each represents Apple and Android products was used to distinguish
+                        the products in the graph.
+                    </li>
+                    <li>
+                        Anchoring: I have used bubble chart to represent that android products have better aspects in some of the of features
+                        compared to apple products
+                    </li>
+                    <li>
+                        I have added respective Apple and Android backgrounds for the winner in a given chart
+                    </li>
+                </ol>
+            </div>
+        </div> 
+    </body>

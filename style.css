@@ -1,0 +1,59 @@
+body {
+    background-color: #000000;
+    color: white;
+}
+h2, h3 {
+    color: white;
+}
+.left {
+  float: left;
+  width: 50%;
+  height: 100vh;
+  /* border: 1px solid red; */
+  background-image: url('images/apple_2.jpeg');
+  opacity: 0.5;
+} 
+#left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  float: right;
+  width: 50%;
+  height: 100vh;
+  /* border: 1px solid blue; */
+  background-image: url('images/android_3.jpeg');
+  background-size: cover;
+  opacity: 0.5;
+}
+#right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#left-chart {
+  margin: auto;
+}
+#summary {
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  padding: 20px;
+  height: calc(100vh - 400px); /* adjust 400px as necessary */
+  overflow-y: auto;
+  margin-top: 900px;
+  border-radius: 30px;
+}
+#summary h5 {
+  text-align: center;
+}
+h5 {
+  font-family: Arial, sans-serif;
+  background-color: beige;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+p {
+  font-family: Verdana, sans-serif;
+}
