@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var divHeight = document.getElementById("left").offsetHeight;
 
     // Define the width, height and margin of the chart
-    var margin = { top: 20, right: 20, bottom: 50, left: 60 },
+    var margin = { top: 20, right: 20, bottom: 80, left: 60 },
         width = divWidth - margin.left - margin.right,
         height = divHeight - margin.top - margin.bottom;
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
  svg.append("text")
     .attr("class", "axis-label")
     .attr("x", width / 2)
-    .attr("y", height + 30)
+    .attr("y", height + 35)
     .attr("text-anchor", "middle")
     .style("fill", "white")
     .text("Device");
@@ -90,14 +90,15 @@ document.addEventListener('DOMContentLoaded', function () {
  svg.append("text")
     .attr("class", "chart-caption")
     .attr("x", width / 2)
-    .attr("y", height + margin.bottom + 30)
+    .attr("y", height + 58)
     .attr("text-anchor", "middle")
     .style("fill", "white")
-    .text("Chart Caption");
+    .style("font-size", "14px")
+    .text("Caption: The Total score for an Apple product is highest compared to Android");
 
 svg.append("text")
     .attr("class", "axis-label")
-    .attr("x", -380)
+    .attr("x", -365)
     .attr("y", -50)
     .attr("dy", "1em")
     .attr("text-anchor", "middle")
@@ -194,7 +195,7 @@ function createBubbleChart() {
     var divHeight = document.getElementById("right").offsetHeight;
 
     // Define the width, height, and margin of the chart
-    var margin = { top: 20, right: 20, bottom: 50, left: 60 },
+    var margin = { top: 20, right: 20, bottom: 80, left: 60 },
         width = divWidth - margin.left - margin.right,
         height = divHeight - margin.top - margin.bottom;
 
@@ -234,10 +235,19 @@ svg.append("g")
 
 svg.append("text")
     .attr("class", "axis-label")
-    .attr("transform", "translate(" + (width / 2) + "," + (height + margin.bottom - 10) + ")")
+    .attr("transform", "translate(" + (width / 2) + "," + (height + margin.bottom - 40) + ")")
     .style("text-anchor", "middle")
     .text("CPU Score")
     .attr("fill", "white");
+
+svg.append("text")
+    .attr("class", "chart-caption")
+    .attr("x", width / 2)
+    .attr("y", height + 58)
+    .attr("text-anchor", "middle")
+    .style("fill", "white")
+    .style("font-size", "14px")
+    .text("Caption: The user experience of the Android is much better than Apple");
 
 svg.append("g")
     .attr("class", "axis y-axis")
